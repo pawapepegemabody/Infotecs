@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -Wl,--dependency-file=CMakeFiles/lib.dir/link.d -shared -Wl,-soname,liblib.so -o liblib.so CMakeFiles/lib.dir/lib.cpp.o
