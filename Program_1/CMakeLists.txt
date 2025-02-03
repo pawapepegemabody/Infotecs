@@ -21,7 +21,7 @@ set(HEADERS
 )
 set(PARENT_DIR "${CMAKE_CURRENT_SOURCE_DIR}/..")
 include_directories(${PARENT_DIR}/lib)
-add_subdirectory(${PARENT_DIR}/lib ${CMAKE_CURRENT_SOURCE_DIR})
+add_subdirectory(${PARENT_DIR}/lib ${PARENT_DIR}/build/lib)
 add_executable(Program_1 ${SOURCES} ${HEADERS})
 target_link_libraries(Program_1 lib)
 
