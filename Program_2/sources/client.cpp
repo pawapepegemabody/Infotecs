@@ -14,7 +14,6 @@ void Client::run(void (*handler)(std::string)) {
     while (true) {
         if (!connectToServer()) {
             sleep(1);
-            std::cout<<"hui";
             continue;
         }
         receiveData(handler);
